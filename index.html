@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>龙岩花生</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <h1>龙岩花生</h1>
+
+    <div class="section">
+        <h1>产品展示</h1>
+        <div class="carousel">
+            <div class="slides">
+                <img src="./image/微信图片_20250722153352.jpg" alt="产品图1">
+                <img src="./image/微信图片_20250722153355.jpg" alt="产品图2">
+                <img src="./image/微信图片_20250722153359.jpg" alt="产品图3">
+                <img src="./image/微信图片_20250722153401.jpg" alt="产品图4">
+                <img src="./image/微信图片_20250722153406.jpg" alt="产品图5">
+                <img src="./image/微信图片_20250722153409.jpg" alt="产品图6">
+                <img src="./image/微信图片_20250722153415.jpg" alt="产品图7">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1> 营业执照</h1>
+        <img src="./image/营业执照.png" alt="营业执照" class="static-img rotate-img">
+    </div>
+
+    <div class="section">
+        <h1> 联系方式</h1>
+        <div class="contact">
+            联系人：陈洋昊<br>
+            电话：133-0697-8226
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>付款二维码</h3>
+        <img src="./image/收款码.jpg" alt="付款二维码" class="static-img">
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 3000);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+
+        /* 字体和整体样式 */
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin: 40px auto 20px;
+            font-weight: bold;
+            color: #2a5d9f;
+        }
+
+
+        .section {
+            /* 居中body */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 0 10px;
+        }
+
+        h3 {
+            /* 居中 */
+            text-align: center;
+            color: #2a5d9f;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* 轮播图容器 */
+        .carousel {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            position: relative;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            flex: 0 0 100%;
+            background-color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* 静态展示图片（营业执照、二维码） */
+        .static-img {
+            display: block;
+            max-width: 400px;
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .rotate-img {
+            transform: rotate(270deg);
+            /* 顺时针旋转90度 */
+            transform-origin: center center;
+        }
